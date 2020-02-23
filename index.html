@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Clínica Veterinária</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/track.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
   </head>
@@ -27,7 +27,7 @@
             </tr>
           </thead>
           <tbody id="tabela-pacientes">
-            <tr class="paciente" id="primeiro-paciente">
+            <tr class="paciente">
               <td class="info-nome">Thor</td>
               <td class="info-dono">Paulo</td>
               <td class="info-raca">Shihtzu</td>
@@ -69,6 +69,47 @@
         </table>
       </section>
     </main>
+
+    <section class="container">
+      <h2 id="titulo-form">Adicionar novo paciente</h2>
+      <form id="form-adiciona">
+        <div class="grupo">
+          <label for="name">Nome do animal:</label>
+          <input id="name" name="name" type="text" class="campo" />
+        </div>
+        <div class="grupo">
+          <label for="owner">Dono:</label>
+          <input
+            id="owner"
+            name="owner"
+            type="text"
+            class="campo campo-medio"
+          />
+        </div>
+        <div class="grupo">
+          <label for="breed">Raça:</label>
+          <input
+            id="breed"
+            name="breed"
+            type="text"
+            class="campo campo-medio"
+          />
+        </div>
+        <div class="grupo">
+          <label for="date">Data:</label>
+          <input id="date" type="text" class="campo campo-medio" />
+        </div>
+        <div class="grupo">
+          <label for="hour">Horário:</label>
+          <input id="hour" type="text" class="campo campo-medio" />
+        </div>
+
+        <button id="adicionar-paciente" class="botao bto-principal">
+          Adicionar
+        </button>
+      </form>
+    </section>
+
     <script src="js/principal.js"></script>
   </body>
 </html>
